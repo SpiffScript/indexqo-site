@@ -128,10 +128,10 @@ export const Footer: React.FC = () => {
             {/* CONTACT (phone then email) */}
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <a
-                href="tel:+17205154843"
+                href="tel:+17205154820"
                 className="text-stone-300 hover:text-sky-400 transition-colors"
               >
-                (720) 515-4843
+                (720) 515-4820
               </a>
               <span className="opacity-80">•</span>
               <a
