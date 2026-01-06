@@ -78,9 +78,8 @@ export const SolutionsDelivery: React.FC = () => {
 
           <div className="max-w-2xl space-y-6 text-base leading-relaxed text-slate-600">
             <p>
-              IndexQo is delivered as a system, not a burst of output. The goal
-              is stability – so your external presence holds alignment as the
-              business evolves.
+              The system is built for durability, not output spikes. Its purpose is to maintain
+              alignment—so your external presence holds steady as the business grows, shifts, and recalibrates.
             </p>
             <p>
               These phases are structural containers. The specific work inside

@@ -66,7 +66,7 @@ export const StructureAndOutcome: React.FC = () => {
     body: [
       "Most misrepresentation doesn’t come from bad intent. It comes from drift: new tools, new vendors, new hires. Shortcuts accumulate and standards blur.",
       "Eventually, execution outpaces coherence. Signals fragment until the business no longer reflects its original purpose.",
-      "IndexQo intervenes at the structural level—where clarity is established, governed, and defended—so growth compounds instead of eroding meaning.",
+      "IndexQo intervenes at the structural level – where clarity is established, governed, and defended—so growth compounds instead of eroding meaning.",
     ],
   };
 
@@ -85,7 +85,7 @@ export const StructureAndOutcome: React.FC = () => {
     title: "The market doesn’t see intent.",
     body: [
       "It sees what holds.",
-      "Coherence is the only defense against the natural erosion of meaning that happens during rapid scale.",
+      "Coherence is the only defense against the natural erosion of meaning that happens during rapid scale. Without it, even well-intentioned growth creates confusion",
     ],
   };
 

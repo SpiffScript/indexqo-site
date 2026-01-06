@@ -89,23 +89,23 @@ export const IdentitySurfaces: React.FC = () => {
 
               <div className="border-t border-slate-100">
                 <SurfaceRow
-                  title="Operating language"
+                  title="Operating Language"
                   note="Teams describe the same work in different terms. Standards become optional."
                 />
                 <SurfaceRow
-                  title="Leadership communication"
+                  title="Leadership Communication"
                   note="Intent changes as it moves through the organization. People fill gaps with assumptions."
                 />
                 <SurfaceRow
-                  title="Standards and enforcement"
+                  title="Standards & Enforcement"
                   note="What matters is not written down or reinforced. Drift becomes normal."
                 />
                 <SurfaceRow
-                  title="Internal documents"
+                  title="Internal Documents"
                   note="Manuals, decks, proposals, and templates contradict each other over time."
                 />
                 <SurfaceRow
-                  title="Ownership and handoffs"
+                  title="Ownership & Handoffs"
                   note='Nobody owns representation end-to-end. Brand becomes “everyone” and therefore “no one.”'
                 />
               </div>
@@ -122,23 +122,23 @@ export const IdentitySurfaces: React.FC = () => {
 
               <div className="border-t border-slate-200">
                 <SurfaceRow
-                  title="Website and discoverability"
+                  title="Website & Discoverability"
                   note="The public footprint reads like a set of pages, not an operating reality."
                 />
                 <SurfaceRow
-                  title="Search structure and hierarchy"
+                  title="Search Structure & Hierarchy"
                   note="Pages compete, repeat, or contradict. Authority is unclear to humans and engines."
                 />
                 <SurfaceRow
-                  title="Email signatures and outbound comms"
+                  title="Outbound Communicaton & Representation"
                   note="Each person represents the business differently. Trust becomes inconsistent."
                 />
                 <SurfaceRow
-                  title="Social presence"
+                  title="Social Presence"
                   note="Tone and cadence fluctuate with whoever is posting. The brand feels unstable."
                 />
                 <SurfaceRow
-                  title="Sales materials and media"
+                  title="Sales Materials & Public Media"
                   note="Collateral falls behind capability. The market sees an outdated version of the business."
                 />
               </div>
@@ -147,7 +147,7 @@ export const IdentitySurfaces: React.FC = () => {
 
           {/* FOOTNOTE (kept tight) */}
           <div className="lg:col-span-10 lg:col-start-2 pt-6 border-t border-slate-200">
-            <p className="text-slate-700 text-sm md:text-base lg:text-lg text-center leading-relaxed max-w-4xl">
+            <p className="text-slate-700 text-sm md:text-base lg:text-base text-center leading-relaxed max-w-4xl">
               When the internal layer is undefined, the external layer becomes improvisation.
               BrandQo corrects the order.
             </p>

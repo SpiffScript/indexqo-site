@@ -53,7 +53,7 @@ export const SuccessEvidence: React.FC = () => {
               The Evidence of Alignment
             </h2>
             <p className="mt-6 text-lg leading-7 text-slate-600">
-              Success at IndexQo isn’t measured by aesthetics alone. It is measured by the durability of the system—how well the signal holds during rapid scale and operational change.
+              Success at IndexQo isn’t measured by aesthetics alone. It is measured by the durability of the system – how well the signal holds during rapid scale and operational change.
             </p>
           </div>
 

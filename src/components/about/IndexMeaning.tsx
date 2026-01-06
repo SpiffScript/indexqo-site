@@ -33,7 +33,7 @@ export const IndexMeaning: React.FC = () => {
 
           <p>
             Search engines, platforms, partners, and customers don’t see a
-            business directly. They interpret signals — structure, consistency,
+            business directly. They interpret signals – structure, consistency,
             language, standards, and behavior over time.
           </p>
 
@@ -46,7 +46,7 @@ export const IndexMeaning: React.FC = () => {
 
           <p>
             When structure is sound, interpretation is accurate. When structure
-            degrades, meaning distorts — quietly and progressively.
+            degrades, meaning distorts – quietly and progressively.
           </p>
 
           <p>IndexQo exists to protect that layer.</p>

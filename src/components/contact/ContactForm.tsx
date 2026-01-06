@@ -287,7 +287,7 @@ export const ContactForm: React.FC = () => {
                   Start with the signal
                 </h2>
                 <p className="mt-3 text-sm leading-6 text-slate-700">
-                  A short note is enough. We’ll respond with clarity and next steps — not generic advice.
+                  A short note is enough. We’ll respond with clarity and next steps – not generic advice.
                 </p>
 
                 <div className="mt-7 border-t border-slate-200 pt-6">
@@ -330,7 +330,7 @@ export const ContactForm: React.FC = () => {
                   </div>
 
                   <div className="mt-6 text-xs text-slate-500">
-                    This is a clean first step — not a commitment.
+                    This is a clean first step – not a commitment.
                   </div>
                 </div>
               </div>

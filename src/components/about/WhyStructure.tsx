@@ -32,8 +32,8 @@ export const WhyStructure: React.FC = () => {
           <p>Eventually, execution outpaces coherence.</p>
 
           <p>
-            IndexQo intervenes at the structural level — where clarity is
-            established, governed, and defended — so growth compounds instead of
+            IndexQo intervenes at the structural level – where clarity is
+            established, governed, and defended – so growth compounds instead of
             eroding meaning.
           </p>
         </div>

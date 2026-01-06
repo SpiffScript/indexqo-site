@@ -27,7 +27,7 @@ export const WhatIndexQoDoes: React.FC = () => {
         {/* Right: body */}
         <div className="space-y-5 text-slate-700 leading-relaxed">
           <p>
-            IndexQo treats brand and digital presence as infrastructure — not
+            IndexQo treats brand and digital presence as infrastructure – not
             expression.
           </p>
 
@@ -43,7 +43,7 @@ export const WhatIndexQoDoes: React.FC = () => {
 
           <p>
             That includes how it’s indexed by machines, recognized by humans,
-            interpreted by partners, and trusted by customers — without
+            interpreted by partners, and trusted by customers – without
             explanation, persuasion, or theatrics.
           </p>
         </div>

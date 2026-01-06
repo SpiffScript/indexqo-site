@@ -50,8 +50,8 @@ export const SolutionsModel: React.FC = () => {
 
           <div className="space-y-6 text-base leading-relaxed text-slate-600">
             <p>
-              IndexQo is delivered as a system – not a burst of output. Each
-              phase protects the next. Skipping steps is how drift returns.
+              IndexQo services are delivered as a system – not a burst of output.
+              Each phase protects the next. Skipping steps is how drift returns.
             </p>
             <p>
               This sequence stays the same whether you’re rebuilding from
