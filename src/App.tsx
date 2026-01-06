@@ -19,7 +19,7 @@ import { Privacy } from "./components/legal/Privacy";
 import { Terms } from "./components/legal/Terms";
 import { AcceptableUse } from "./components/legal/AcceptableUse";
 
-import Seo from "./components/Seo";
+//import Seo from "./components/Seo";
 import ScrollToTop from "./components/ui/ScrollToTop";
 
 import { ROUTES } from "./types";
@@ -38,7 +38,7 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
-      <Seo />
+      {/*<Seo />*/}
       <AppLayout>
         <Routes>
           <Route path={ROUTES.HOME} element={<LandingPage />} />

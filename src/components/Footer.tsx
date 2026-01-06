@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
             <p className="text-stone-300 text-sm leading-relaxed">
               Protecting reality,
               <br />
-              from erosion.
+              from Erosion.
             </p>
           </div>
 

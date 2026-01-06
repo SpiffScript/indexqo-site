@@ -1,11 +1,83 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Basic -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>indexqo-site</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>IndexQo – Protecting reality, from Erosion.</title>
+
+    <meta
+      name="description"
+      content="IndexQo helps businesses eliminate mixed signals, align public presence with operational reality, and build brands that hold steady as they evolve."
+    />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://indexqo.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IndexQo" />
+    <meta property="og:title" content="IndexQo — Clarity that makes progress possible" />
+    <meta
+      property="og:description"
+      content="Reduce re-explaining. Eliminate mixed signals. Build a brand that holds alignment as your business evolves."
+    />
+    <meta property="og:url" content="https://indexqo.com/" />
+    <meta
+      property="og:image"
+      content="https://indexqo.com/images/og/placeholder-og.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IndexQo — Clarity that makes progress possible" />
+    <meta
+      name="twitter:description"
+      content="Reduce re-explaining. Eliminate mixed signals. Build a brand that holds alignment as your business evolves."
+    />
+    <meta
+      name="twitter:image"
+      content="https://indexqo.com/images/og/placeholder-og.jpg"
+    />
+
+    <!-- Favicon (placeholder is fine for now) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IndexQo",
+        "url": "https://indexqo.com",
+        "logo": "https://indexqo.com/images/og/placeholder-og.jpg",
+        "description": "IndexQo aligns business messaging, visibility, and structure so public signals match operational reality.",
+        "sameAs": [
+          "https://www.linkedin.com/company/indexqo"
+        ]
+      }
+    </script>
+
+    <!-- Structured Data: Website -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "IndexQo",
+        "url": "https://indexqo.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://indexqo.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
