@@ -1,0 +1,88 @@
+export type NextStepsOutlineKey =
+  | "begin"
+  | "not"
+  | "does"
+  | "breaks"
+  | "coherence"
+  | "requires";
+
+export type NextStepsOutlineItem = {
+  key: NextStepsOutlineKey;
+  label: string; // left rail label
+  title: string; // big title in the reading panel
+  body: string[]; // paragraphs
+};
+
+export type NextStepsOutlineContent = {
+  sectionLabel: string;
+  sectionTitle: string;
+  sectionIntro?: string;
+  items: NextStepsOutlineItem[];
+};
+
+export const nextStepsOutline: NextStepsOutlineContent = {
+  sectionLabel: "Engagement conditions",
+  sectionTitle: "How engagement works",
+  sectionIntro:
+    "This is not a pitch sequence. It is the operating frame that protects clarity — and prevents meaning erosion once work begins.",
+  items: [
+    {
+      key: "begin",
+      label: "How it begins",
+      title: "Every engagement begins the same way: a signal review.",
+      body: [
+        "Before any design, messaging, or implementation work is discussed, we examine how your business is currently represented across its public footprint.",
+        "This step exists to establish clarity, not commitment. No work is proposed until the signal is understood.",
+      ],
+    },
+    {
+      key: "not",
+      label: "What does not happen",
+      title: "The first step is not cosmetic.",
+      body: [
+        "There is no rush to redesign, reposition, or “optimize.” Surface-level changes only amplify distortion when the underlying signal is unclear.",
+        "Speed comes after coherence — not before it.",
+      ],
+    },
+    {
+      key: "does",
+      label: "What does happen",
+      title: "We establish a shared understanding of reality.",
+      body: [
+        "We map how your business is perceived today, where that perception aligns with how you actually operate, and where it breaks down.",
+        "This includes identifying contradictions between message and behavior, fragmented ownership across vendors or platforms, and signals that no longer reflect your standards.",
+        "The goal is not to diagnose blame, but to restore accuracy.",
+      ],
+    },
+    {
+      key: "breaks",
+      label: "Where signal breaks",
+      title: "Where signal breaks most often",
+      body: [
+        "Signal problems usually show up as confusion that feels normal: inconsistent language, mismatched expectations, or a public presence that doesn’t match how the business actually runs.",
+        "Common symptoms include: different vendors pulling in different directions, messaging that changes by channel, or customers asking questions your website already claims to answer.",
+        "The point is not perfection. The point is identifying the specific places where meaning is being lost.",
+      ],
+    },
+    {
+      key: "coherence",
+      label: "What coherence looks like",
+      title: "What coherence looks like in practice",
+      body: [
+        "Coherence is when the market receives the same truth no matter where it encounters you — and that truth matches operational reality.",
+        "It means your language, offers, and standards reinforce each other instead of competing. It also means your team isn’t forced to “explain around” the public story.",
+        "When coherence is present, decisions get easier. Updates get faster. Trust builds without constant effort.",
+      ],
+    },
+    {
+      key: "requires",
+      label: "What alignment requires",
+      title: "Correcting distortion requires participation.",
+      body: [
+        "Clarity cannot be delegated. Fixing signal drift takes involvement — not approval alone.",
+        "That includes access to real decision-makers, a willingness to confront inconsistency, and respect for standards once they are established.",
+        "This is not outsourced identity. It is collaborative alignment.",
+      ],
+    },
+  ],
+};

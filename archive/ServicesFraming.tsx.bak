@@ -1,0 +1,33 @@
+import React from "react";
+import { CtaButton } from "../ui/CtaButton";
+import { Container } from "../ui/Container";
+
+export const ServicesFraming: React.FC = () => {
+  return (
+    <section className="py-12 md:py-16">
+      <Container className="px-6 sm:px-10 lg:px-14">
+        <div className="max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900 leading-tight">
+            Translate real competence into clear market expectations.
+          </h2>
+
+          <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            IndexQo supports small businesses with outcome-based work — websites, visibility
+            foundations, and operational assets — built to reduce confusion and make
+            engagement easier.
+          </p>
+
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <CtaButton variant="primary" href="/contact">
+              Start a conversation
+            </CtaButton>
+
+            <CtaButton variant="secondary" href="#services">
+              View services
+            </CtaButton>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+};
