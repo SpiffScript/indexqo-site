@@ -26,11 +26,11 @@ export const ServicesCtaPanel: React.FC = () => {
 
             <div className="lg:col-span-4 flex flex-col gap-3 lg:items-end">
               <CtaButton href="/contact" variant="primary">
-                Discuss an outcome
+                Discuss an Outcome
               </CtaButton>
 
-              <CtaButton href="#services" variant="secondary">
-                Review services
+              <CtaButton href="/brandqo" variant="secondary">
+                Review BrandQo
               </CtaButton>
             </div>
           </div>

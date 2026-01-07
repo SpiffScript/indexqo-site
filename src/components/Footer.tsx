@@ -4,6 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 export const Footer: React.FC = () => {
   const location = useLocation();
 
+  const isHome = location.pathname === "/";
+
   return (
     <footer className="bg-slate-900 text-stone-400 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-16">
@@ -48,8 +50,12 @@ export const Footer: React.FC = () => {
                     <Link
                       key={item.path}
                       to={item.path}
-                      className={`transition-colors ${
-                        isActive ? "text-sky-400" : "hover:text-sky-400"
+                      className={`transition-all duration-200 ${
+                        isHome
+                          ? "text-stone-300 opacity-100 hover:text-sky-400"
+                          : isActive
+                          ? "text-stone-300 opacity-100"
+                          : "text-stone-300/60 hover:text-sky-400 hover:opacity-100"
                       }`}
                     >
                       {item.name}

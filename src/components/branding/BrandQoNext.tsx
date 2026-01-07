@@ -39,15 +39,15 @@ export const BrandQoNext: React.FC = () => {
                   href="/contact"
                   className="w-full px-5 py-2.5 text-sm tracking-tight justify-center"
                 >
-                  Discuss an outcome
+                  Discuss an Outcome
                 </CtaButton>
 
                 <CtaButton
                   variant="secondary"
-                  href="/services"
+                  href="/next-steps"
                   className="bg-white w-full px-5 py-2.5 text-sm tracking-tight justify-center"
                 >
-                  Review services
+                  Review Next Steps
                 </CtaButton>
               </div>
             </div>

@@ -62,7 +62,7 @@ export const PhilosophyInPractice: React.FC = () => {
               </p>
               <div className="pt-2">
                 <a
-                  href="/solutions"
+                  href="/services"
                   className="inline-block bg-slate-900 text-slate-50 px-4 py-2 text-xs font-bold uppercase tracking-widest transition-all duration-200 hover:bg-slate-800 focus:outline-none"
                 >
                   Our Principle: Coherence

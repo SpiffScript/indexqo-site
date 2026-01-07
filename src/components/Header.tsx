@@ -8,6 +8,8 @@ export const Header: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
+  const isHome = location.pathname === ROUTES.HOME;
+
   const handleScroll = useCallback(() => {
     const isScrolled = window.scrollY > 50;
     if (isScrolled !== scrolled) {
@@ -76,16 +78,22 @@ export const Header: React.FC = () => {
 
             return (
               <Link
-                key={item.path}
-                to={item.path}
-                className={`relative transition-colors ${
-                  isActive
-                    ? "text-blue-500"
-                    : scrolled
-                    ? "hover:text-blue-500"
-                    : "hover:text-sky-400"
-                }`}
-              >
+              key={item.path}
+              to={item.path}
+              className={`relative transition-all duration-200 ${
+                isHome
+                  ? scrolled
+                    ? "text-slate-900 hover:text-sky-600"
+                    : "text-slate-100 hover:text-sky-400"
+                  : isActive
+                  ? scrolled
+                    ? "text-slate-900 opacity-100"
+                    : "text-slate-50 opacity-100"
+                  : scrolled
+                  ? "text-slate-700/70 hover:text-sky-600 hover:opacity-100"
+                  : "text-slate-100/70 hover:text-sky-400 hover:opacity-100"
+              }`}
+            >
                 {item.name}
               </Link>
             );
@@ -159,6 +167,7 @@ export const Header: React.FC = () => {
                   { name: "BrandQo", path: ROUTES.BRANDQO },
                   { name: "Solutions", path: ROUTES.SOLUTIONS },
                   { name: "Next Steps", path: ROUTES.NEXT_STEPS },
+                  { name: "About", path: ROUTES.ABOUT },
                 ].map((item) => {
                   const isActive = location.pathname === item.path;
 
@@ -168,8 +177,8 @@ export const Header: React.FC = () => {
                       to={item.path}
                       className={`py-3 border-b border-slate-200/50 last:border-0 transition-colors ${
                         isActive
-                          ? "text-blue-600 font-semibold"
-                          : "hover:text-slate-900"
+                          ? "text-slate-900 font-semibold"
+                          : "hover:text-sky-500"
                       }`}
                       onClick={() => setMobileOpen(false)}
                     >
