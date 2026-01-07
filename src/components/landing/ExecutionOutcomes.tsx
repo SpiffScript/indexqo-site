@@ -20,12 +20,14 @@ export const ExecutionOutcomes: React.FC = () => {
         is how progress becomes visible without being manufactured.
       </p>
 
-      <div className="space-y-4">
-        <p className="text-lg text-slate-700">This work always starts the same way.</p>
-        <p className="text-lg font-medium text-slate-900">
-          By identifying where the signal breaks — and correcting it at the structural level.
+      <p className="text-lg text-slate-700 leading-relaxed">
+        This work always starts the same way.
         </p>
-      </div>
+
+      <p className="text-lg text-slate-900">
+        By identifying where the signal breaks – and correcting it at the
+        structural level.
+      </p>
     </div>
   );
 };
