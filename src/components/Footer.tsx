@@ -128,7 +128,7 @@ export const Footer: React.FC = () => {
 
             {/* SERVICE LOCATION */}
             <div className="text-stone-300 text-sm">
-              Based in Denver, Colorado. Supporting organizations beyond geography.
+              Based in Denver, Colorado. Building signal integrity for a borderless market.
             </div>
 
             {/* CONTACT (phone then email) */}
