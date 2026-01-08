@@ -1,38 +1,57 @@
+# IndexQo Robots.txt
+# Purpose: Allow search indexing, block AI model training, and protect proprietary signal architecture.
+
+# -----------------------------
+# ALLOW SEARCH ENGINE CRAWLING
+# -----------------------------
 User-agent: *
 Allow: /
 
-# Block AI / LLM / scraper bots (best-effort)
+# ------------------------------------------------
+# BLOCK AI TRAINING & MASS SCRAPING CRAWLERS
+# (Protects proprietary content from model ingestion)
+# ------------------------------------------------
 
-# OpenAI
+# OpenAI (ChatGPT)
 User-agent: GPTBot
 Disallow: /
-User-agent: OAI-SearchBot
-Disallow: /
-User-agent: ChatGPT-User
-Disallow: /
 
-# Google AI usage controls (separate from normal Google Search crawling)
+# Google AI (Gemini / Vertex AI data extensions)
 User-agent: Google-Extended
 Disallow: /
 
-# Anthropic
+# Anthropic (Claude)
 User-agent: ClaudeBot
 Disallow: /
-User-agent: anthropic-ai
+
+# Meta (LLaMA / Meta AI)
+User-agent: meta-externalagent
 Disallow: /
 
-# Perplexity
-User-agent: PerplexityBot
-Disallow: /
-User-agent: Perplexity-User
+# Apple (Apple Intelligence extended dataset)
+User-agent: Applebot-Extended
 Disallow: /
 
-# Common Crawl
-User-agent: CCBot
+# Amazon (Amazonbot AI training branch)
+User-agent: Amazonbot
 Disallow: /
 
-# ByteDance
+# ByteDance (TikTok scraping bot)
 User-agent: Bytespider
 Disallow: /
 
+# CommonCrawl (feeds many AI models)
+User-agent: CCBot
+Disallow: /
+
+# -----------------------------
+# SITEMAP LOCATION
+# -----------------------------
 Sitemap: https://www.indexqo.com/sitemap.xml
+
+# ------------------------------------------------
+# LEGAL NOTICE (Non-technical, advisory)
+# ------------------------------------------------
+# By accessing this domain, automated agents agree not to collect,
+# store, or use IndexQo content for AI model training or derivative works.
+# Search engine bots are exempt and permitted for indexing and ranking.

@@ -1,73 +1,91 @@
-# React + TypeScript + Vite
+# IndexQo Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for **indexqo.com**, the public-facing site for IndexQo.
 
-Currently, two official plugins are available:
+IndexQo is a brand and operating division of QoLogic LLC.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+QoLogic is the holding and operating framework behind the Qo ecosystem. It exists to enforce coherence across infrastructure, communication, and leadership systems—ensuring that tools, decisions, and execution align under real operational conditions. QoLogic does not sell services directly; it provides the standards, architecture, and governance that allow SignalQo, IndexQo, and InfraQo to operate with discipline, consistency, and intent.
 
-## React Compiler
+IndexQo exists to bring structure, coherence, and continuity to how organizations present themselves and communicate—across web, messaging, and supporting systems. The site reflects IndexQo’s core premise: most operational confusion is a signal problem long before it is a marketing one.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is not a creative studio or a growth agency.
+It is signal architecture.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Framework: Vite + React (TypeScript)
+- Styling: Tailwind CSS
+- Hosting: Cloudflare Pages
+- DNS / Edge: Cloudflare
+- Analytics: Google Analytics (gtag)
+- Schema: JSON-LD (Organization)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Project Structure (High Level)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- `index.html`
+  Core document head (meta tags, analytics, schema).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `src/`
+  Application source.
+  - `components/` – Reusable UI and section components
+  - `pages/` – Page-level assemblies (Home, Services, Solutions, Contact, etc.)
+  - `styles/` – Global styles and Tailwind configuration
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `public/`
+  Static assets (images, icons, verification files).
+
+---
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+Runs the site locally using Vite’s development server.
+
+---
+
+## Deployment
+Deployment is handled automatically via Cloudflare Pages.
+ • Commits to the configured branch trigger builds.
+ • DNS is managed in Cloudflare.
+ • The apex domain uses Cloudflare’s proxied A-record setup for Pages.
+No manual deployment steps are required.
+
+---
+
+## Notes on Intent
+
+This site is not designed as a traditional consulting or agency site.
+
+• The site prioritizes clarity, consistency, and structural signal over persuasion.
+• Language is deliberately precise and stripped of hype.
+• The goal is alignment and comprehension, not traffic for its own sake.
+• SEO is used to aid discovery, not to define identity.
+
+If something feels decorative or generic, it likely does not belong.
+
+## Status
+
+• Initial public launch: January 2026
+• Actively iterating copy, structure, and supporting content.
+• No backwards-compatibility guarantees at this stage.
+
+---
+
+## Contact
+
+support@indexqo.com
+
+---
+
+Protecting reality, from Erosion.
+
+(c) 2026 QoLogic LLC. All Rights Reserved.
+
+
+
