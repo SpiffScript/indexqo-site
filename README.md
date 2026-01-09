@@ -14,71 +14,61 @@ It is signal architecture.
 ---
 
 ## Tech Stack
-
-- Framework: Vite + React (TypeScript)
-- Styling: Tailwind CSS
-- Hosting: Cloudflare Pages
-- DNS / Edge: Cloudflare
-- Analytics: Google Analytics (gtag)
-- Schema: JSON-LD (Organization)
+* Framework: Vite + React (TypeScript)
+* Styling: Tailwind CSS
+* Hosting: Cloudflare Pages
+* DNS / Edge: Cloudflare
+* Analytics: Google Analytics (gtag)
+* Schema: JSON-LD (Organization)
 
 ---
 
-## Project Structure (High Level)
-
-- `index.html`
-  Core document head (meta tags, analytics, schema).
-
-- `src/`
-  Application source.
-  - `components/` – Reusable UI and section components
-  - `pages/` – Page-level assemblies (Home, Services, Solutions, Contact, etc.)
-  - `styles/` – Global styles and Tailwind configuration
-
-- `public/`
-  Static assets (images, icons, verification files).
+## Project Structure
+* index.html: Core document head (meta tags, analytics, schema).
+* /src/: Application source.
+* /src/components/: Reusable UI and section components.
+* /src/pages/: Page-level assemblies (Home, Services, Solutions, Contact).
+* /src/styles/: Global styles and Tailwind configuration.
+* /public/: Static assets (images, icons, verification files).
 
 ---
 
 ## Local Development
+1. Install dependencies:
+   npm install
 
-```bash
-npm install
-npm run dev
-Runs the site locally using Vite’s development server.
+2. Run development server:
+   npm run dev
 
 ---
 
 ## Deployment
 Deployment is handled automatically via Cloudflare Pages.
- • Commits to the configured branch trigger builds.
- • DNS is managed in Cloudflare.
- • The apex domain uses Cloudflare’s proxied A-record setup for Pages.
+* Commits to the configured branch trigger builds.
+* DNS is managed in Cloudflare.
+* The apex domain uses Cloudflare’s proxied A-record setup for Pages.
 No manual deployment steps are required.
 
 ---
 
 ## Notes on Intent
+* Clarity over Persuasion: The site prioritizes consistency and structural signal over marketing fluff.
+* Precision: Language is deliberately precise and stripped of hype.
+* Alignment: The goal is comprehension, not traffic for its own sake.
+* Identity: SEO is used to aid discovery, not to define the brand identity.
 
-This site is not designed as a traditional consulting or agency site.
+If something feels decorative or generic, it does not belong.
 
-• The site prioritizes clarity, consistency, and structural signal over persuasion.
-• Language is deliberately precise and stripped of hype.
-• The goal is alignment and comprehension, not traffic for its own sake.
-• SEO is used to aid discovery, not to define identity.
-
-If something feels decorative or generic, it likely does not belong.
+---
 
 ## Status
-
-• Initial public launch: January 2026
-• Actively iterating copy, structure, and supporting content.
-• No backwards-compatibility guarantees at this stage.
+* Initial public launch: January 2026
+* Actively iterating copy, structure, and supporting content.
+* No backwards-compatibility guarantees at this stage.
 
 ---
 
 ## Contact
-
 support@indexqo.com
 
 ---
@@ -86,6 +76,3 @@ support@indexqo.com
 Protecting reality, from Erosion.
 
 (c) 2026 QoLogic LLC. All Rights Reserved.
-
-
-
